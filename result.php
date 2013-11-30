@@ -148,13 +148,14 @@ if(!isset($_SESSION['rl'] )){
 <!--    <span>ที่อยู่ --><?php //echo $_SESSION['address_customer']?><!--</span>-->
 <!---->
 <!--</div>-->
-<br>
+
 
 <div id="table_wrap">
 <table id="table_print_1" border="1">
     <tr>
-        <th id="unit_attri">จำนวน</th>
+        <th>ลำดับ</th>
         <th id="name_attri">รายการ</th>
+        <th id="unit_attri">จำนวน</th>
         <th id="ppu_attri">ราคาต่อหน่วย</th>
         <th id="price_attri">จำนวนเงิน</th>
     </tr>
@@ -163,8 +164,9 @@ if(!isset($_SESSION['rl'] )){
         if(is_array($array_unit)){
             foreach($array_unit as $key => $value){
                 echo "<tr>",
+                    "<td>",$key+1,"</td>",
+                    "<td class='name'>",$array_name[$key],"</td>",
                      "<td class='price_row'>",number_format($array_unit[$key]),"</td>",
-                     "<td class='name'>",$array_name[$key],"</td>",
                      "<td class='price_row'>",number_format($array_ppu[$key], 2),"</td>",
                      "<td class='price_row'>",number_format($array_price[$key], 2),"</td>",
                      "</tr>";
@@ -177,6 +179,7 @@ if(!isset($_SESSION['rl'] )){
             $count_tr-- ;
 
             echo "<tr class='fullfill_td'>",
+            "<td> </td>",
             "<td> </td>",
             "<td> </td>",
             "<td> </td>",

@@ -17,8 +17,9 @@ $(function() {
              price = "price"+ i ;
 
                 $(' #table1 #data_body ').append(' <tr>' +
+                    '<td style="text-align: center">'+(i+1)+'</td>' +
+                    '<td><input type="text"  class="'+ i +'"  id="name" style="width:420px"></td>' +
                     '<td><input type="text"  class="'+ i +'" id="unit" ></td>' +
-                    '<td><input type="text"  class="'+ i +'"  id="name" style="width:400px"></td>' +
                     '<td><input type="text"  class="'+ i +'" id="ppu"></td>' +
                     '<td><input type="text"  class="'+ i +'" id="price"></td>' +
                     '</tr> ');

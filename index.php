@@ -3,7 +3,7 @@
 <head>
 <title>Index</title>
 
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta charset="UTF-8">
 <!--    <meta http-equiv="X-UA-Compatible" content="IE=10" >-->
 
 
@@ -22,7 +22,7 @@
 
 <div id="head_box">
     <h1>สงขลาเจริญการช่าง</h1>
-    <p>Bill Sharp Ver. nightly-3</p>
+    <p>Bill Sharp - Easy 1</p>
 </div>
 
 <div id="choose">
@@ -131,15 +131,17 @@
 <table border="1" id="table1">
     <tbody id="data_body">
         <tr>
-            <th>จำนวน</th>
+            <th>ลำดับ</th>
             <th>รายการ</th>
+            <th>จำนวน</th>
             <th>ราคาต่อหน่วย</th>
             <th>จำนวนเงิน</th>
         </tr>
 
         <tr>
+            <td style="text-align: center">1</td>
+            <td><input type="text"  class="0" id="name" style="width:420px"></td>
             <td><input type="text"  class="0" id="unit" ></td>
-            <td><input type="text"  class="0" id="name" style="width:400px"></td>
             <td><input type="text"  class="0" id="ppu"></td>
             <td><input type="text"  class="0" id="price"></td>
         </tr>
@@ -149,6 +151,7 @@
     <tr>
         <td class="empty_white_cell"></td>
         <td class="empty_white_cell"></td>
+        <td class="empty_white_cell"></td>
         <td class="attri_1">รวมราคาทั้งหมด</td>
         <td class = "result_td"><input type="text" id="all_price"></td>
     </tr>
@@ -156,11 +159,13 @@
     <tr>
         <td class="empty_white_cell"></td>
         <td class="empty_white_cell"></td>
+        <td class="empty_white_cell"></td>
         <td class="attri_1">จำนวนภาษีมูลค่าเพิ่ม 7%</td>
         <td class = "result_td"><input type="text" id="vat_price"></td>
     </tr>
 
     <tr>
+        <td class="empty_white_cell"></td>
         <td class="empty_white_cell"></td>
         <td class="empty_white_cell"></td>
         <td class="attri_1">จำนวนเงินรวมทั้งสิ้น</td>
