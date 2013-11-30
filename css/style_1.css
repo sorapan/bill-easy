@@ -1,0 +1,179 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font:13px/27px Arial,sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+
+#head_box{
+    float: left;
+    background-color: darkorange;
+    color:white;
+    height: 60px;
+    width: 100%;
+}
+
+#head_box h1,#head_box p{
+    display: inline;
+    line-height: 50px;
+
+}
+#head_box h1{
+    padding-left: 20px;
+}
+
+#choose{
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color:  rgb(235, 235, 235);
+}
+
+#choose_box{
+    margin-top: 25px;
+    float: left;
+    position: inherit;
+    width: 25%;
+}
+
+#radio_box{
+    color: black;
+    float:left;
+    margin-top: 25px;
+    display: block;
+    width: 180px;
+}
+
+#center_box{
+    width: 100%;
+    margin-top: 25px;
+    float: left;
+    display: block;
+}
+
+#center_box table{
+    margin-left: 160px;
+    border-collapse: collapse;
+    color: black;
+}
+
+#table1{
+    border:1px solid black;
+}
+
+#data_body th{
+    border:1px solid black;
+    background-color: rgb(245, 245, 245);
+}
+
+#data_body td{
+    border:1px solid black;
+    background-color: white;
+}
+
+#data_body input, #last_price, #vat_price, #all_price{
+
+    border:0;
+}
+
+.result_td{
+    border:1px solid black;
+}
+
+#status_box{
+    color:black;
+    margin-top: 25px;
+    margin-left:200px;
+    float: left;
+    background-color: transparent;
+    width: 600px;
+    padding: 10px;
+}
+
+/*<<<<<<<<<< Customer data Section >>>>>>>>>>>>*/
+
+#customer_data{
+
+    color:black;
+    margin-top: 30px;
+    margin-left:200px;
+    float: left;
+    width: 600px;
+    padding: 10px;
+    padding-bottom: 40px;
+
+}
+
+#customer_data input, #customer_data textarea{
+
+    border: 1px solid black;
+    position:absolute;
+    left: 340px;
+    width: 750px;
+
+}
+
+#date{
+
+    border: 1px solid black;
+    position:absolute;
+
+}
+
+#date.day{
+
+    left: 340px;
+    width: 55px;
+
+}
+
+#date.month{
+
+    left: 405px;
+    width: 55px;
+
+}
+
+#date.year{
+
+    left: 470px;
+    width: 75px;
+
+}
+
+/*<<<<<<<<<< Customer data Section >>>>>>>>>>>>*/
+
+#button_box, #show_result{
+    margin-top: 25px;
+    float: left;
+    padding-left: 160px;
+    width: auto;
+}
+
+#button_box button{
+    border: dimgrey solid 1px;
+    color: black;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 50px;
+}
+
+
+
+#button_box button:hover{
+    cursor: pointer;
+}
+
+.empty_white_cell, #table1, .attri_1{
+    border: 0
+}
+
+#unit, #ppu, #price, #all_price, #vat_price, #last_price{
+   width:180px;
+}
+
+h1, label{padding-left: 50px;}
+
+#select_headername, #radio_box, #button_box button{
+    font:13px/27px Arial,sans-serif;
+}

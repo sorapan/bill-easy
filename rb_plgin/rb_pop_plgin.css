@@ -1,0 +1,28 @@
+#popup_sty01{
+
+    font:13px/27px Arial,sans-serif;
+    float: left;
+    padding: 10px;
+    top: 40%;
+    left: 40%;
+    position: fixed;
+    height: auto;
+    width: 150px;
+    background-color: rgb(60,60,60);
+    color:white;
+    text-align: center;
+}
+
+#popup_sty01 input:nth-child(2){
+    width: 20%;
+}
+
+#popup_sty01 input:nth-child(3){
+    width: 67%;
+    margin-left: 3%;
+}
+
+#popup_sty01 button{
+    border: 0;
+    background-color: rgb(225,225,225);;
+}
