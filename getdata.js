@@ -42,28 +42,28 @@ $(function() {
                 EachAndToArray(' #ppu',ppu_rray);
                 EachAndToArray(' #price',price_rray);
 
-                $(' input:text').each(function(){
-                    if(this.value == ""){
+//                $(' input:text').each(function(){
+//                    if(this.value == ""){
+//
+//                        //ShowInStatusBox(false, "Some text box is empty");
+//                        $.FalseStatus("Some text box is empty");
+//                        checkempty = 0;
+//                        return false;
+//
+//                    }else{
+//
+//                        //ShowInStatusBox(true, "Data was successful");
+//                        $.TrueStatus("Data was successful");
+//                        checkempty = 1;
+//                        return true;
+//
+//                    }
+//                });
 
-                        //ShowInStatusBox(false, "Some text box is empty");
-                        $.FalseStatus("Some text box is empty");
-                        checkempty = 0;
-                        return false;
-
-                    }else{
-
-                        //ShowInStatusBox(true, "Data was successful");
-                        $.TrueStatus("Data was successful");
-                        checkempty = 1;
-                        return true;
-
-                    }
-                });
-
-                if(checkempty === 1){
+//                if(checkempty === 1){
 
                     TransferData();
-                }
+//                }
 
                 //TransferData();
                 //window.location = "result.php";

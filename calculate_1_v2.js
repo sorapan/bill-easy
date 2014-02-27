@@ -22,7 +22,7 @@ $(function() {
     });
 
     // Auto Calculate When There Row Was Removed;
-    $(document).on('click',' #CreateRowButton,#DelRowButton' ,function(){
+    $(document).on('click',' #DelRowButton' ,function(){
         Price_Calculate(inverse);
     });
 
@@ -76,7 +76,7 @@ $(function() {
                     $(' #all_price').val(all_price);
                     all_price_note = parseFloat(all_price);
                 }else{
-                    $(' #all_price').val("");
+//                    $(' #all_price').val("");
                 }
             });
 
@@ -87,7 +87,7 @@ $(function() {
             $(' #all_price').val(price);
 
             if($(' #last_price').val() === ""){
-                $(' #all_price').val("");
+//                $(' #all_price').val("");
             }
 
         }else if(inverse == "3"){
@@ -104,12 +104,12 @@ $(function() {
                         $(' #last_price').val(a_price);
 
                 }else{
-                    $(' #all_price').val("");
+//                    $(' #all_price').val("");
                 }
 
                 if($(' #all_price').val() === ""){
-                    $(' #vat_price').val("");
-                    $(' #last_price').val("");
+//                    $(' #vat_price').val("");
+//                    $(' #last_price').val("");
                 }
 
             });
@@ -135,7 +135,7 @@ $(function() {
 
             }
             if($(' #all_price').val() === ""){
-                $(' #vat_price').val("");
+//                $(' #vat_price').val("");
             }
 
             Last_Price_Calculate(price,vat_price_note,inverse);
@@ -152,7 +152,7 @@ $(function() {
             All_Price_Calculate(vat_note, inverse);
 
             if($(' #last_price').val() === ""){
-                $(' #vat_price').val("");
+//                $(' #vat_price').val("");
             }
         }
 
@@ -171,7 +171,7 @@ $(function() {
                 $(" #last_price").val(last_price);
             }
             if($(' #vat_price').val() === ""){
-                $(" #last_price").val("");
+//                $(" #last_price").val("");
             }
 
         }else if(inverse == "2"){
@@ -186,7 +186,7 @@ $(function() {
                     $(' #last_price').val(last_price);
                     last_price_note = parseFloat(last_price);
                 }else{
-                    $(' #last_price').val("");
+//                    $(' #last_price').val("");
                 }
             });
 

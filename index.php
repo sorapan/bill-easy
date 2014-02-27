@@ -22,7 +22,7 @@
 
 <div id="head_box">
     <h1>สงขลาเจริญการช่าง</h1>
-    <p>Bill Sharp - Easy 1</p>
+    <p>Easy V.2</p>
 </div>
 
 <div id="choose">

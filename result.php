@@ -116,7 +116,7 @@ if(!isset($_SESSION['rl'] )){
 
 <div id="head_2">สงขลาเจริญการช่าง</div><br>
 <div class="subhead_1">131/138 หมู่ที่ 8 ต.เขารูปช้าง อ.เมืองสงขลา จ.สงขลา 90000</div>
-<div class="subhead_1">โทร/แฟ๊กซ์ (074) 436353, 437377 081-2766620</div>
+<div class="subhead_1">โทร (074) 321480 , 081-2766620 แฟ๊กซ์ (074) 321479</div>
 <div class="subhead_1">เลขประจำตัวผู้เสียภาษีอากร 3 90990012906 3</div><br>
 <div class="subhead_2">วันที่<span id="date"><?=$_SESSION['day']?> / <?=$_SESSION['month']?> / <?=$_SESSION['year']?></span></div>
 
@@ -164,11 +164,11 @@ if(!isset($_SESSION['rl'] )){
         if(is_array($array_unit)){
             foreach($array_unit as $key => $value){
                 echo "<tr>",
-                    "<td>",$key+1,"</td>",
+                    "<td>", countRow($key,$array_unit[$key]) ,"</td>",
                     "<td class='name'>",$array_name[$key],"</td>",
-                     "<td class='price_row'>",number_format($array_unit[$key]),"</td>",
-                     "<td class='price_row'>",number_format($array_ppu[$key], 2),"</td>",
-                     "<td class='price_row'>",number_format($array_price[$key], 2),"</td>",
+                     "<td class='price_row'>",NumberFormat($array_unit[$key]),"</td>",
+                     "<td class='price_row'>",NumberFormat($array_ppu[$key], 2),"</td>",
+                     "<td class='price_row'>",NumberFormat($array_price[$key], 2),"</td>",
                      "</tr>";
 
                 $count_tr-- ;
@@ -189,7 +189,7 @@ if(!isset($_SESSION['rl'] )){
 
 
         if(is_numeric($_SESSION['vat_price'])){
-            $vat_price = number_format($_SESSION['vat_price'], 2);
+            $vat_price = @number_format($_SESSION['vat_price'], 2);
         }else{
             $vat_price = $_SESSION['vat_price'];
         }
@@ -204,7 +204,7 @@ if(!isset($_SESSION['rl'] )){
         "<td class='char_num' >", new ConvertNumber($_SESSION['last_price']) ,"</td>",
         "<td ></td>",
         "<td class='empty_border_table'>รวมราคาทั้งหมด</td>",
-        "<td class='result_td_1'>",number_format($_SESSION['all_price'], 2)," </td>",
+        "<td class='result_td_1'>",@number_format($_SESSION['all_price'], 2)," </td>",
         "</tr>";
 
     echo "<tr>",
@@ -218,7 +218,7 @@ if(!isset($_SESSION['rl'] )){
     "<td ></td>",
     "<td ></td>",
     "<td class='empty_border_table'>จำนวนเงินรวมทั้งสิ้น</td>",
-    "<td class='result_td_3'>",number_format($_SESSION['last_price'], 2)," </td>",
+    "<td class='result_td_3'>",@number_format($_SESSION['last_price'], 2)," </td>",
     "</tr>";
 
         //echo "<tr><td class='result_td'>",$_SESSION['all_price'],"</td></tr>";
@@ -251,3 +251,35 @@ if(!isset($_SESSION['rl'] )){
 
 </body>
 </html>
+
+<?php
+
+function countRow($key,$array_unit){
+
+    if($array_unit != ""){
+
+        return  $key+1;
+
+    }else{
+
+        return "";
+
+    }
+
+}
+
+function NumberFormat($value,$digit = 0){
+
+    if(empty($value)){
+
+        return "";
+
+    }else{
+
+        return @number_format($value,$digit);
+
+    }
+
+}
+
+?>
